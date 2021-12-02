@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style></style>
+</head>
+
+<body>
+    <center>
+
+        <h1>
+            simple calculator using javascript</h1>
+
+        <input type="tel" placeholder="number1" id="num1">
+        <br>
+        <input type="tel"placeholder="number2" id="num2">
+        <br>
+        <input type="button" value="+" onclick="adding()">
+        <input type="button" value="-" onclick="subraction()">
+        <input type="button" value="*" onclick="multiply()">
+        <input type="button" value="/" onclick="divide()">
+        <br>
+        <input type="text" value="" id="result">
+
+    </center>
+    <script>
+        function adding() {
+            let value1 = parseFloat(document.getElementById("num1").value);
+            let value2 = parseFloat(document.getElementById("num2").value);
+
+            document.getElementById("result").value = value1 + value2;
+        }
+
+        function subraction() {
+
+            let value1 = parseFloat(document.getElementById("num1").value);
+            let value2 = parseFloat(document.getElementById("num2").value);
+
+            document.getElementById("result").value = value1 - value2;
+        }
+
+        function multiply() {
+
+            let value1 = parseFloat(document.getElementById("num1").value);
+            let value2 = parseFloat(document.getElementById("num2").value);
+
+            document.getElementById("result").value = value1 * value2;
+        }
+
+        function divide() {
+
+            let value1 = parseFloat(document.getElementById("num1").value);
+            let value2 = parseFloat(document.getElementById("num2").value);
+
+            document.getElementById("result").value = value1 / value2;
+        }
+
+    </script>
+</body>
+
+</html>

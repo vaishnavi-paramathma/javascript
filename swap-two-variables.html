@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
 </head>
+
 <body>
    <script>
-      let variable1 = prompt("enter variable1");
-      let variable2 = prompt("enter variable2");
-      let temp ;
-      document.write("enter the first variable :" +v1);
-      document.write("enter the second variable :"+v2);
-      temp = v1;
-      v1=v2;
-      v2 = temp;
-      document.write("enter the first variable :" + v1);
-      document.write("enter the second variable :" + v2);
 
-   </script> 
+      //swapping two numbers
+      let Numbers1 = prompt("enter number 1");
+      let Numbers2 = prompt("enter number 2");
+      
+      // console.log(Numbers1); 
+      let temp = Numbers1;
+       Numbers1 = Numbers2;
+       Numbers2 = temp;
+      console.log(Numbers1,Numbers2); 
+
+
+   </script>
 </body>
+
 </html>
